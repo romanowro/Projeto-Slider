@@ -314,3 +314,53 @@ header a {
     }
 
 }
+
+@media (max-width: 1024px) {
+    .list-item {
+        flex: 1 1 calc(50% - 2rem);
+        max-width: calc(50% - 2rem);
+    }
+
+    .thumb-item {
+        flex: 1 1 calc(33.33% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list-item {
+        flex: 1 1 calc(100% - 2rem);
+        max-width: calc(100% - 2rem);
+    }
+
+    .thumb-item {
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+    .arrows button {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .description {
+        font-size: 0.875rem;
+    }
+
+    .title {
+        font-size: 1.25rem;
+    }
+
+    .arrows button {
+        padding: 0.25rem 0.5rem;
+    }
+
+    .thumb-item {
+        flex: 1 1 calc(100% - 1rem);
+    }
+}
